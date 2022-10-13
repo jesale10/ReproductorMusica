@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/musicItem"
+    android:background="@color/black">
+    
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/musicImg"
+        android:background="@drawable/ic_music"
+        android:padding="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File Name"
+        android:layout_toEndOf="@id/musicImg"
+        android:layout_toStartOf="@id/more"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/musicFileName"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artist Name"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/musicImg"
+        android:layout_toStartOf="@id/more"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"
+        android:id="@+id/musicFileArtist"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="@integer/material_motion_duration_medium_1"
+        android:scrollHorizontally="true"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/more"
+        android:background="@drawable/ic_more"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
